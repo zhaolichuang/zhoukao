@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.hed{
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
+}
+.dii{
+  margin: 0 auto;
+  width: 810px;
+}
+.box{
+  padding: 10px;
+  margin: 0 auto;
+  border:3px solid black;
+}
+ul{
+  display: block;
+  list-style: none;
+  width: 800px;
+}
+ul li{
+  font-size: 16px;
+  line-height: 30px;
+}
+.ipt{
+  width: 800px;
+  background: blue;
+  height: 30px;
+  padding: 5px;
+}
+#ip1{
+  width: 200px;
+}
+#ip2{
+  width: 380px;
+}

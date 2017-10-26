@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css"/>
+</head>
+<body>
+<div class="dii">
+    <div class="hed">Skier Dictionary</div>
+    <div class="box">
+        <ul>
+            <li>dad: 122121</li>
+            <li>fsd: 12122112</li>
+            <li>gfd: 212122</li>
+            <li>rtg: 454</li>
+        </ul>
+    </div>
+    <div class="ipt">
+        <input type="text" id="ip1"/>
+        <input type="text" id="ip2"/>
+        <button id="but">提交</button>
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+    $('#but').click(function(){
+        var content=$("#inp1").val();
+        $.ajax({
+            url:"http://localhost:3000",
+            type:"POST",
+            data:{title:content},
+            success:function(e){
+                $('.box ul').append('<li>'+e.nam+'</li>')
+            }
+        })
+    })
+</script>
+</body>
+</html>
